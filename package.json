@@ -4,9 +4,10 @@
   "version": "0.0.634",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.9.7",
-    "@material-ui/icons": "^4.9.1",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.46",
+    "@material-ui/utils": "^4.11.2",
     "classnames": "^2.2.6",
     "emoji-mart": "^3.0.0",
     "emoji-regex": "^8.0.0",
@@ -32,6 +33,8 @@
     ]
   },
   "scripts": {
+    "dev": "react-scripts start --trace-events-enabled",
+    "test: debug": "react-scripts --inspect-brk test --runInBand --no-cache",
     "precommit": "lint-staged",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build && sw-precache-cra --config sw-config.js --no-minify",

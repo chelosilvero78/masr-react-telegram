@@ -7,13 +7,15 @@
 
 import React from 'react';
 import blue from '@material-ui/core/colors/blue';
-import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+//import styled from '@material-ui/core/styles';
+//import createMuiTheme from '@material-ui/core/styles/createTheme';
+import createMuiTheme from '@material-ui/core/styles/createMuiStrictModeTheme';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import { StylesProvider } from '@material-ui/core/styles';
 import { getDisplayName } from './Utils/HOC';
 import ApplicationStore from './Stores/ApplicationStore';
 import { getBadgeSelectedColor } from './Utils/Color';
-
+//const { createMuiTheme}=styled;
 function updateLightTheme(theme) {
     // const root = document.querySelector(':root');
     // const style = getComputedStyle(root);
